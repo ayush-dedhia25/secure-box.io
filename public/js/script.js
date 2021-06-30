@@ -17,15 +17,16 @@
 			opt.classList.add("active");
 			selfBody.classList.add("active");
 			selfBtn.classList.add("active");
-			opt.scrollTop = 2;
 		});
 	});
 	
-	function clearActiveStates(collection) {
-		collection.forEach(col => {
-			const sb = col.querySelector("[data-option-body]");
-			col.classList.remove("active");
+	function clearActiveStates(elements) {
+		elements.forEach(elem => {
+			const sb = elem.querySelector("[data-option-body]");
+			const cb = elem.querySelector("[data-collapse-btn]");
+			elem.classList.remove("active");
 			sb.classList.remove("active");
+			cb.classList.remove("active");
 		});
 	}
 	

@@ -102,6 +102,8 @@ p {
 	@include load-font($mulish);
 }
 
+.text-justify { text-align: justify; }
+
 .container {
 	width: 90%;
 	max-width: 1120px;
@@ -110,7 +112,27 @@ p {
 
 .d-block { display: inline-block; }
 
-section { overflow: hidden; }
+section {
+	margin: 1.5rem 0;
+	overflow: hidden;
+	
+	> h3 {
+		position: relative;
+		text-align: center;
+		margin-bottom: 2rem;
+		
+		&::before {
+			position: absolute;
+			content: "";
+			width: 200px;
+			height: 1.5px;
+			top: calc(100% + 8px);
+			left: 50%;
+			transform: translateX(-50%);
+			background-color: blue;
+		}
+	}
+}
 
 .navbar {
 	width: 100%;
@@ -146,6 +168,8 @@ section { overflow: hidden; }
 		text-align: center;
 	}
 }
+
+
 
 #handles-options {
 	
@@ -260,6 +284,57 @@ section { overflow: hidden; }
 					font-size: 1rem;
 					@include load-font($mulish, 400);
 				}
+			}
+		}
+	}
+}
+
+#timeline-section {
+	.timeline {
+		display: grid;
+		grid-template-columns: 5px 1fr;
+		
+		.timeline-bar {
+			position: relative;
+			width: 3px;
+			background-color: red;
+			
+			&:last-of-type {
+				border-bottom-left-radius: 5px;
+				border-bottom-right-radius: 5px;
+			}
+			
+			.timeline-delta {
+				position: absolute;
+				left: 50%;
+				@include perfect-box(15px);
+				transform: translateX(-50%);
+				background-color: #ffffff;
+				border-radius: 50%;
+				border: 1.5px solid red;
+			}
+		}
+		
+		.timeline-content {
+			padding: .8rem;
+			margin-left: 1.2rem;
+			background-color: #FFF3F0;
+			border-radius: 5px;
+			box-shadow: 0 0 10px rgba(#ccc, 1);
+			
+			&:not(:last-of-type) {
+				margin-bottom: 1.5rem;
+			}
+			
+			h4 {
+				margin-bottom: .3rem;
+			}
+			
+			p {
+				font-size: .8rem;
+				line-height: 1.4;
+				max-height: 100px;
+				overflow-y: scroll;
 			}
 		}
 	}

@@ -351,6 +351,10 @@ p {
   font-weight: 300;
 }
 
+.text-justify {
+  text-align: justify;
+}
+
 .container {
   width: 90%;
   max-width: 1120px;
@@ -362,7 +366,23 @@ p {
 }
 
 section {
+  margin: 1.5rem 0;
   overflow: hidden;
+}
+section > h3 {
+  position: relative;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+section > h3::before {
+  position: absolute;
+  content: "";
+  width: 200px;
+  height: 1.5px;
+  top: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: blue;
 }
 
 .navbar {
@@ -504,6 +524,49 @@ section {
   font-size: 1rem;
   font-family: "Mulish", Sans-Serif;
   font-weight: 400;
+}
+
+#timeline-section .timeline {
+  display: grid;
+  grid-template-columns: 5px 1fr;
+}
+#timeline-section .timeline .timeline-bar {
+  position: relative;
+  width: 3px;
+  background-color: red;
+}
+#timeline-section .timeline .timeline-bar:last-of-type {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+#timeline-section .timeline .timeline-bar .timeline-delta {
+  position: absolute;
+  left: 50%;
+  width: 15px;
+  height: 15px;
+  transform: translateX(-50%);
+  background-color: #ffffff;
+  border-radius: 50%;
+  border: 1.5px solid red;
+}
+#timeline-section .timeline .timeline-content {
+  padding: 0.8rem;
+  margin-left: 1.2rem;
+  background-color: #FFF3F0;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #cccccc;
+}
+#timeline-section .timeline .timeline-content:not(:last-of-type) {
+  margin-bottom: 1.5rem;
+}
+#timeline-section .timeline .timeline-content h4 {
+  margin-bottom: 0.3rem;
+}
+#timeline-section .timeline .timeline-content p {
+  font-size: 0.8rem;
+  line-height: 1.4;
+  max-height: 100px;
+  overflow-y: scroll;
 }
 
 /*# sourceMappingURL=styles.css.map */
