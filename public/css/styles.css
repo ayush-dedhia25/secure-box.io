@@ -1,13 +1,7 @@
 @charset "UTF-8";
-/*---------------------------------------------------
-# COLORS
----------------------------------------------------*/
-/*---------------------------------------------------
-# GOOGLE FONTS
----------------------------------------------------*/
-/*---------------------------------------------------
-# Maps
----------------------------------------------------*/
+/*------------------------------------------------
+# Universal Resets
+------------------------------------------------*/
 * {
   margin: 0;
   padding: 0;
@@ -18,6 +12,9 @@ html {
   scroll-behavior: smooth;
 }
 
+/*------------------------------------------------
+# Utility Classes
+------------------------------------------------*/
 .p-1 {
   padding: 0.5rem;
 }
@@ -318,8 +315,90 @@ html {
   margin-bottom: 2.5rem;
 }
 
+.spacer {
+  position: relative;
+  width: 100%;
+  height: 0.9px;
+  background-color: #ffffff;
+  margin: 0.8rem 0;
+}
+
+.spacer.decorated::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.spacer.decorated::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+/*------------------------------------------------
+# Text Classes
+------------------------------------------------*/
+.text-justify {
+  text-align: justify;
+}
+
 .text-center {
   text-align: center;
+}
+
+/*------------------------------------------------
+# Responsive Container
+------------------------------------------------*/
+.container {
+  width: 90%;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+/*------------------------------------------------
+# Display Classes
+------------------------------------------------*/
+.d-in-block {
+  display: inline-block;
+}
+
+.d-block {
+  display: block;
+}
+
+/*------------------------------------------------
+# Default CSS Resets
+------------------------------------------------*/
+section {
+  margin: 1.5rem 0;
+  overflow: hidden;
+}
+section > h3 {
+  position: relative;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+section > h3::before {
+  position: absolute;
+  content: "";
+  width: 200px;
+  height: 1.5px;
+  top: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: blue;
 }
 
 i[class^=fa] {
@@ -351,40 +430,14 @@ p {
   font-weight: 300;
 }
 
-.text-justify {
-  text-align: justify;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
-.container {
-  width: 90%;
-  max-width: 1120px;
-  margin: 1.2rem auto;
-}
-
-.d-block {
-  display: inline-block;
-}
-
-section {
-  margin: 1.5rem 0;
-  overflow: hidden;
-}
-section > h3 {
-  position: relative;
-  text-align: center;
-  margin-bottom: 2rem;
-}
-section > h3::before {
-  position: absolute;
-  content: "";
-  width: 200px;
-  height: 1.5px;
-  top: calc(100% + 8px);
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: blue;
-}
-
+/*------------------------------------------------
+# Navbar Section
+------------------------------------------------*/
 .navbar {
   width: 100%;
   padding: 0.7rem 1rem;
@@ -410,6 +463,9 @@ section > h3::before {
   margin-right: 0.5rem;
 }
 
+/*------------------------------------------------
+# About Us Section
+------------------------------------------------*/
 #about {
   padding: 1rem 0;
   display: flex;
@@ -427,6 +483,9 @@ section > h3::before {
   text-align: center;
 }
 
+/*------------------------------------------------
+# Social Handles Security Section
+------------------------------------------------*/
 #handles-options .options-wrapper .option {
   padding: 0.7rem 1rem;
   background-color: #f8f8ff;
@@ -526,6 +585,9 @@ section > h3::before {
   font-weight: 400;
 }
 
+/*------------------------------------------------
+# Timeline Section
+------------------------------------------------*/
 #timeline-section .timeline {
   display: grid;
   grid-template-columns: 5px 1fr;
@@ -567,6 +629,21 @@ section > h3::before {
   line-height: 1.4;
   max-height: 100px;
   overflow-y: scroll;
+}
+
+/*------------------------------------------------
+# Footer Section
+------------------------------------------------*/
+#footer {
+  padding: 1.2em;
+  color: #ffffff;
+  background-color: #cc59d2;
+  font-family: "Mulish", Sans-Serif;
+  font-weight: 300;
+}
+#footer p {
+  line-height: 1.2;
+  font-size: 0.8em;
 }
 
 /*# sourceMappingURL=styles.css.map */
