@@ -7,11 +7,16 @@
 	<meta name="description" content="This app will help you to secure your social handles! Just follow the guides and do as they say. I am sure you'll thank me :)">
 	<meta name="keywords" content="SecureBox, security, security-guide">
 	<title>Secure Box</title>
+	<!--===== Google Fonts =====-->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
+	<!--===== Instant Animation Library =====-->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+	<!--===== AOS Library =====-->
+	<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+	<!--===== Custom Stylesheet =====-->
 	<link rel="stylesheet" href="./public/css/styles.css">
 </head>
 <body>
@@ -326,7 +331,7 @@
 				<div class="timeline-bar">
 					<div class="timeline-delta mt-1"></div>
 				</div>
-				<div class="timeline-content mt-1">
+				<div class="timeline-content mt-1" data-aos="fade-up-left">
 					<h4>John Doe</h4>
 					<p>
 						I was thinking for the security for my social accounts, but didn't knew the best way to make it secure.!
@@ -339,7 +344,7 @@
 				<div class="timeline-bar">
 					<div class="timeline-delta"></div>
 				</div>
-				<div class="timeline-content">
+				<div class="timeline-content" data-aos="fade-up-left">
 					<h4>Merry Jane</h4>
 					<p>
 						This site turned out pretty helpful from the security perspective.
@@ -351,7 +356,7 @@
 				<div class="timeline-bar">
 					<div class="timeline-delta"></div>
 				</div>
-				<div class="timeline-content mb-1">
+				<div class="timeline-content mb-1" data-aos="fade-up-left">
 					<h4>Aman Jain</h4>
 					<p>
 						<strong>From</strong> being a friend of him <strong>to</strong> making new projects together,
@@ -374,7 +379,12 @@
 		</div>
 	</section>
 	
+	<!--===== FontAwesome Icons =====-->
 	<script src="./public/js/icons.js"></script>
+	<!--===== AOS Library =====-->
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>AOS.init();</script>
+	<!--===== Custom Script =====-->
 	<script src="./public/js/script.js"></script>
 </body>
 </html>
