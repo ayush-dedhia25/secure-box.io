@@ -1,0 +1,66 @@
+@use "./_mixins" as *;
+@use "./_colors" as *;
+@use "./_fonts" as *;
+
+/*------------------------------------------------
+# Navbar Section
+------------------------------------------------*/
+.navbar {
+	width: 100%;
+	padding: .7rem 1rem;
+	background-color: rgba(#9046CF, 0.5);
+	@include flex-between;
+	box-shadow: 0 .5rem .8rem rgba($primary, 0.5);
+	
+	> a {
+		text-decoration: none;
+		color: #ffffff;
+		@include load-font($mulish, 500);
+		font-size: 1.3rem;
+		@include flex-center;
+		
+		img {
+			@include perfect-box(50px);
+			margin-right: .5rem;
+		}
+	}
+}
+
+/*------------------------------------------------
+# Footer Section
+------------------------------------------------*/
+#footer {
+	padding: 1.2em;
+	color: #ffffff;
+	background-color: #cc59d2;
+	@include load-font($mulish);
+	
+	p {
+		line-height: 1.2;
+		font-size: .8em;
+	}
+	
+	.divided {
+		display: flex;
+		padding: 0 1.5rem;
+		
+		ul {
+			width: 50%;
+			
+			li {
+				
+				&:not(:last-of-type) {
+					margin-bottom: .5em;
+				}
+				
+				a {
+					text-decoration: underline;
+				}
+			}
+			
+			&.right-list {
+				text-align: right;
+			}
+		}
+	}
+}
