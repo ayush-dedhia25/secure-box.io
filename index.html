@@ -379,6 +379,19 @@
 		</div>
 	</section>
 	
+	<section id="passwordGenerator">
+		<h3>Strong Password Generator</h3>
+		<div class="container">
+			<div class="strong-pass-generator">
+				<h4>Generate strong password for your social sites</h4>
+				<button type="button" id="generatePassBtn" class="d-block mt-3" onclick="sayHello();">
+					Generate
+				</button>
+				<input type="text" id="generatedPassword" class="mt-2" placeholder="Click on generate to generate" />
+			</div>
+		</div>
+	</section>
+	
 	<footer id="footer">
 		<div>
 			<a href="#" class="text-center d-block"><strong>All Rights Reserved &copy; 2021</strong></a>
@@ -395,8 +408,7 @@
 			<div class="spacer w-75"></div>
 			<div class="divided">
 				<ul class="left-list">
-					<li><a href="#">Password Generator</a></li>
-					<li><a href="#">Password Hasing</a></li>
+					<li><a href="#passwordGenerator">Password Generator</a></li>
 				</ul>
 				
 				<ul class="right-list">
@@ -413,6 +425,6 @@
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script>AOS.init();</script>
 	<!--===== Custom Script =====-->
-	<script src="./public/js/script.js" type="module"></script>
+	<script src="./public/js/script.js"></script>
 </body>
 </html>

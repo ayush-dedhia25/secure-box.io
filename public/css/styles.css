@@ -73,6 +73,14 @@ ul {
   list-style-type: none;
 }
 
+button, input {
+  border: none;
+  background: none;
+}
+button:focus, input:focus {
+  outline: none;
+}
+
 /*------------------------------------------------
 # Utility Classes
 ------------------------------------------------*/
@@ -376,6 +384,16 @@ ul {
   padding-bottom: 2.5rem;
 }
 
+.my-0 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.py-0 {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 .spacer {
   position: relative;
   width: 100%;
@@ -676,6 +694,41 @@ ul {
   line-height: 1.4;
   max-height: 100px;
   overflow-y: scroll;
+}
+
+/*------------------------------------------------
+# Password Generator Section
+------------------------------------------------*/
+#passwordGenerator {
+  background-color: #C2EABD;
+  padding: 1.2rem 0;
+}
+#passwordGenerator .strong-pass-generator {
+  font-family: "Mulish", Sans-Serif;
+  font-weight: 300;
+}
+#passwordGenerator .strong-pass-generator > label[for=sizeLimit] {
+  font-weight: bold;
+}
+#passwordGenerator .strong-pass-generator > input#generatedPassword {
+  width: 80%;
+  border: 1px solid #ffffff;
+  padding: 0.5rem;
+  border-radius: 5px;
+  color: #ffffff;
+  font-family: "Mulish", Sans-Serif;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+#passwordGenerator .strong-pass-generator #generatePassBtn {
+  font-family: "Mulish", Sans-Serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: 1px solid #ffffff;
+  padding: 0.7em 2rem;
+  border-radius: 3px;
+  box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5);
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -194,3 +194,40 @@
 		}
 	}
 }
+
+/*------------------------------------------------
+# Password Generator Section
+------------------------------------------------*/
+#passwordGenerator {
+	background-color: #C2EABD;
+	padding: 1.2rem 0;
+	
+	.strong-pass-generator {
+		
+		@include load-font($mulish);
+		
+		> label[for="sizeLimit"] {
+			font-weight: bold;
+		}
+		
+		> input#generatedPassword {
+			width: 80%;
+			border: 1px solid #ffffff;
+			padding: .5rem;
+			border-radius: 5px;
+			color: $white;
+			@include load-font($mulish);
+			letter-spacing: 1px;
+		}
+		
+		#generatePassBtn {
+			@include load-font($mulish, 600);
+			text-transform: uppercase;
+			border: 1px solid $white;
+			padding: .7em 2rem;
+			border-radius: 3px;
+			box-shadow: 2px 2px 5px rgba(#ffffff, .5);
+			color: $white;
+		}
+	}
+}

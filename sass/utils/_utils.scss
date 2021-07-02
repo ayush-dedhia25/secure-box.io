@@ -29,6 +29,9 @@ $spacing: (
 	.py-#{$key} { padding-top: $val; padding-bottom: $val; }
 }
 
+.my-0 { margin-top: 0; margin-bottom: 0; }
+.py-0 { padding-top: 0; padding-bottom: 0; }
+
 .spacer {
 	position: relative;
 	width: 100%;
