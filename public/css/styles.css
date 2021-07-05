@@ -731,4 +731,28 @@ button:focus, input:focus {
   color: #ffffff;
 }
 
+/*------------------------------------------------
+# Terms & Conditions Section
+------------------------------------------------*/
+#termsAndConditions h1 {
+  font-size: 1.7em;
+  text-transform: uppercase;
+}
+#termsAndConditions .terms-type ul {
+  font-family: "Mulish", Sans-Serif;
+  font-weight: 300;
+  list-style-type: circle;
+}
+#termsAndConditions .terms-type ul li {
+  font-size: 0.9em;
+  line-height: 1.5;
+  margin-left: 1em;
+}
+#termsAndConditions .terms-type ul li:not(:last-of-type) {
+  margin-bottom: 0.8em;
+}
+#termsAndConditions .terms-type:not(:last-of-type) {
+  margin-bottom: 1.5em;
+}
+
 /*# sourceMappingURL=styles.css.map */

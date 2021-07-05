@@ -231,3 +231,34 @@
 		}
 	}
 }
+
+/*------------------------------------------------
+# Terms & Conditions Section
+------------------------------------------------*/
+#termsAndConditions {
+	h1 {
+		font-size: 1.7em;
+		text-transform: uppercase;
+	}
+	
+	.terms-type {
+		ul {
+			@include load-font($mulish);
+			list-style-type: circle;
+			
+			li {
+				font-size: .9em;
+				line-height: 1.5;
+				margin-left: 1em;
+				
+				&:not(:last-of-type) {
+					margin-bottom: .8em;
+				}
+			}
+		}
+		
+		&:not(:last-of-type) {
+			margin-bottom: 1.5em;
+		}
+	}
+}
