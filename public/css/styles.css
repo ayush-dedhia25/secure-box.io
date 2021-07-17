@@ -755,4 +755,22 @@ button:focus, input:focus {
   margin-bottom: 1.5em;
 }
 
+/*------------------------------------------------
+# Customers Section
+------------------------------------------------*/
+#happyCustomers .counter-box {
+  color: #ffffff;
+  padding: 1em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ed254e;
+  border-radius: 5px;
+  box-shadow: 0 0.4em 0.7em rgba(237, 37, 78, 0.5);
+}
+#happyCustomers .counter-box [data-counter] {
+  font-size: 3em;
+}
+
 /*# sourceMappingURL=styles.css.map */

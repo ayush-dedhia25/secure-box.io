@@ -1,1 +1,0 @@
-concurrently "sass --watch sass:public/css" "browser-sync --not-notify"

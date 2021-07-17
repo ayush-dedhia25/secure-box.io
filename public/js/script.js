@@ -1,5 +1,26 @@
 const options = document.querySelectorAll(".option");
 const body = document.querySelectorAll("[data-option-body]");
+const counterBox = document.querySelectorAll(".counter-box");
+
+// console.log(Math.floor(window.scrollY + document.querySelector(".counter-box").getBoundingClientRect().top));
+function counterUp(id, start, end, duration) {
+	let obj = document.querySelector(id),
+	current = start,
+	range = end - start,
+	increment = end > start ? 1 : -1,
+	step = Math.abs(Math.floor(duration / range)),
+	timer = setInterval(() => {
+		current += increment;
+		obj.textContent = current;
+		if (current == end) {
+			clearInterval(timer);
+		}
+	}, step);
+}
+
+if (Math.floor(window.scrollY) === Math.floor(counterBox.getBoundingClientRect().top)) {
+	counterUp("[data-counter]", 0, 50, 1000);
+}
 
 // Accordion Working Logic
 options.forEach(opt => {

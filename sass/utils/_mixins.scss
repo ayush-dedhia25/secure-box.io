@@ -1,39 +1,39 @@
 @mixin center-all {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 @mixin flex-center {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 @mixin flex-between {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
 }
 
 @mixin flex-around {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
 }
 
 @mixin flex-evenly {
-	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
 }
 
 @mixin load-font($font, $wght: 300) {
-	font-family: $font;
-	font-weight: $wght;
+   font-family: $font;
+   font-weight: $wght;
 }
 
 @mixin perfect-box($size) {
-	width: $size;
-	height: $size;
+   width: $size;
+   height: $size;
 }
